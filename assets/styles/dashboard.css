@@ -1,0 +1,265 @@
+/* Deshboard CSS */
+
+.content {
+    margin-left: 250px;
+    padding: 100px 29px;
+}
+
+.page-title {
+    color: #3B3551;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0.50px;
+    word-wrap: break-word
+}
+
+.notification-icon {
+    float: right;
+    margin-top: -15px;
+}
+
+.card-group {
+    display: flex;
+    column-gap: 10px;
+}
+
+.dashboard-card {
+    width: 100%;
+    height: 100%;
+    background: white;
+    box-shadow: 0px 3px 4px rgba(227.37, 227.37, 227.37, 0.29);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.dashboard-card-title {
+    color: #3B3551;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.36px;
+    word-wrap: break-word;
+}
+
+.dashboard-card-total {
+    color: #3B3551;
+    font-size: 35px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.dashboard-card-week {
+    color: #6F7F95;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    word-wrap: break-word;
+    display: flex;
+}
+
+.chart {
+    width: 50%;
+    padding: 25px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.partner-header {
+    margin-bottom: 65px;
+}
+
+.partner-activation {
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    padding: 25px 25px 0;
+    justify-content: space-between
+}
+
+.top-partner-title {
+    color: #3B3551;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.40px;
+    word-wrap: break-word
+}
+
+.weekly-sort {
+    color: #6F7F95;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word
+}
+
+.total-top-partner {
+    color: #3B3551;
+    font-size: 40px;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.activation-in-percent {
+    color: #6F7F95;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    word-wrap: break-word
+}
+
+.partner-companys {
+    border-right: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.partner-companys:last-child {
+    border: none;
+}
+
+.partner-companys:after {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.community {
+    margin-bottom: 42px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word
+}
+
+.open-invoices {
+    width: 96%;
+    padding: 25px 25px 0;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.invoice-title {
+    color: #3B3551;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.40px;
+    word-wrap: break-word
+}
+
+.invoice-sort {
+    color: #6F7F95;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word
+}
+
+.table-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+    /* Enable horizontal scrolling for the table */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px 0 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.pagination {
+    text-align: end;
+    margin-top: 20px;
+}
+
+.pagination li {
+    display: inline-block;
+    border: none;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #6F7F95;
+    font-size: 12.24px;
+    font-weight: 600;
+    line-height: 15.30px;
+    letter-spacing: 0.24px;
+    word-wrap: break-word
+}
+
+.pagination .pagination-next {
+    background-color: #ff6b00;
+    color: #fafafa;
+    border-radius: 10px;
+}
+
+.pagination a:hover {
+    background-color: #ebebeb;
+}
+
+.affiliate-partner {
+    color: #6B6B6B;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word
+}
+
+.acnt-date {
+    color: #6B6B6B;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word
+}
+
+.billable {
+    color: #90D272;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word
+}
+
+.status-chips {
+    background-color: #f8f8f9;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.table-text {
+    color: #6B6B6B;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word
+}

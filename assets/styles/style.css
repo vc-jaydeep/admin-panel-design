@@ -1,0 +1,196 @@
+@import "dashboard.css";
+
+/* Common CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    margin: 0;
+    font-family: 'Manrope';
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+img {
+    max-width: 100%;
+}
+
+i {
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+mx .w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.my-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+    /* for mobile view */
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.gap-10 {
+    column-gap: 10px;
+}
+
+.flex-d-column {
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.primary-color {
+    color: #FF6B00 !important;
+}
+
+.outline-button {
+    background-color: transparent;
+    color: #A0A0A0;
+    font-size: 16px;
+    border: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Sidebar CSS */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.logo {
+    padding: 27px 50px 42px 50px;
+}
+
+.navigation-menu {
+    padding: 0 50px;
+    color: #A0A0A0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word;
+    margin-top: -35px;
+}
+
+li {
+    padding: 30px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.menu-text {
+    margin-left: 30px;
+}
+
+.active {
+    color: #ff6b00;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.sub-menu-selection {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.28px;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.down-arrow {
+    margin-left: 15px;
+    color: black;
+}
+
+.account-section {
+    position: absolute;
+    bottom: 0;
+    padding: 0 50px;
+    color: #A0A0A0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.logged-in-user {
+    color: #3B3551;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.36px;
+    word-wrap: break-word
+}
+
+.role-chip {
+    background-color: #fff2e8;
+    width: 60px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.role-title {
+    color: #ff6b00;
+}
+
+
+

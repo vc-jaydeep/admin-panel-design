@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <section class="sidebar">
+
+        <div class="logo">
+            <img src="assets/images/logo1.png" alt="calopad">
+        </div>
+        <div>
+            <div class="navigation-menu">
+                <ul>
+                    <li>
+                        <i class="fa fa-th-large" aria-hidden="true"></i>
+                        <a href="#" class="menu-text">Dashboard</a>
+                    </li>
+                    <li>
+                        <p class="sub-menu-selection">Partners <i class="fa fa-caret-down down-arrow"
+                                aria-hidden="true"></i></p>
+                        <div class="d-flex">
+                            <img src="assets/images/menu.svg" alt="Partner">
+                            <a href="#" class="menu-text active">Partners</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="sub-menu-selection">Settings <i class="fa fa-caret-down down-arrow"
+                                aria-hidden="true"></i></p>
+                        <div class="d-flex">
+                            <img src="assets/images/Settings.svg" alt="Partner">
+                            <a href="#" class="menu-text">Settings</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="account-section">
+                <p class="logged-in-user">Jaydeep Vala</p>
+                <p class="role-chip my-15"><span class="role-title">ADMIN</span></p>
+                <div class="d-flex">
+                    <img src="assets/images/logout.svg" alt="Partner">
+                    <button href="#" class="menu-text outline-button">Logout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <img src="/assets/images/Notification.svg" class="notification-icon" alt="notification">
+        <h1 class="page-title">Dashboard</h1>
+        <div class="card-group mt-30">
+            <div class="dashboard-card">
+                <h2 class="dashboard-card-title">Cards Total / Activated</h2>
+                <p class="dashboard-card-total mt-5">1’325 / 143</p>
+                <p class="dashboard-card-week mt-5">+2% this week <img src="/assets/images/Arrow_Small_up.svg"
+                        alt="upper-arrow"> </p>
+            </div>
+            <div class="dashboard-card">
+                <h2 class="dashboard-card-title">Revenue Initial Cards</h2>
+                <p class="dashboard-card-total mt-5">CHF 13’250</p>
+                <p class="dashboard-card-week mt-5">+17% this week <img src="/assets/images/Arrow_Small_up.svg"
+                        alt="upper-arrow"></p>
+            </div>
+            <div class="dashboard-card">
+                <h2 class="dashboard-card-title">Revenue Activations</h2>
+                <p class="dashboard-card-total mt-5">CHF 7’007</p>
+                <p class="dashboard-card-week mt-5">+2% this week <img src="/assets/images/Arrow_Small_up.svg"
+                        alt="upper-arrow"></p>
+            </div>
+            <div class="dashboard-card">
+                <h2 class="dashboard-card-title">Billing Positions</h2>
+                <p class="dashboard-card-total mt-5">6’945</p>
+                <p class="dashboard-card-week mt-5">+2% this week &nbsp;<img src="/assets/images/Arrow_Small_down.svg"
+                        alt="upper-arrow"></p>
+            </div>
+        </div>
+        <div class="d-flex gap-10 w-100 mt-30">
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="partner-activation d-flex flex-d-column">
+                <div class="d-flex space-between partner-header">
+                    <h2 class="top-partner-title">
+                        Top Partners
+                    </h2>
+                    <p class="weekly-sort">
+                        This week
+                        <img src="assets/images/Sort_small.svg" alt="sorting-img">
+                    </p>
+                </div>
+                <div class="d-flex flex-grow">
+                    <div class="partner-companys">
+                        <div>
+                            <h4 class="total-top-partner">
+                                465
+                            </h4>
+                            <p class="activation-in-percent d-flex">
+                                +2% Activations <img src="/assets/images/Arrow_Small_up.svg" alt="upper-arrow">
+                            </p>
+                        </div>
+                        <p class="community">
+                            Omnia Physio
+                        </p>
+                    </div>
+                    <div class="partner-companys">
+                        <div>
+                            <h4 class="total-top-partner">
+                                245
+                            </h4>
+                            <p class="activation-in-percent d-flex">
+                                +2% Activations <img src="/assets/images/Arrow_Small_up.svg" alt="upper-arrow">
+                            </p>
+                        </div>
+                        <p class="community">
+                            Medical Center X
+                        </p>
+                    </div>
+                    <div class="partner-companys">
+                        <div>
+                            <h4 class="total-top-partner">
+                                154
+                            </h4>
+                            <p class="activation-in-percent d-flex">
+                                -3% Activations &nbsp;<img src="/assets/images/Arrow_Small_down.svg" alt="upper-arrow">
+                            </p>
+                        </div>
+                        <p class="community">
+                            Kiosk West
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="open-invoices mt-30">
+            <div class="invoice-header">
+                <h2 class="invoice-title">Open Invoices</h2>
+                <p class="d-flex invoice-sort">Oldest Entries <img src="assets/images/Sort_small.svg" alt="sort_small">
+                </p>
+            </div>
+            <div class="inoice-table">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Affiliate Partner</th>
+                                <th>Accounting Date</th>
+                                <th>Billable</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Table rows go here -->
+                            <tr>
+                                <td class="affiliate-partner primary-color">TCM Janine</td>
+                                <td class="acnt-date">09.03.2023 11:21</td>
+                                <td class="billable">CHF 49</td>
+                                <td class="d-flex"><p class="status-chips mr-10"><span class="ml-10">Open</span></p> <i class="fa fa-caret-down" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="affiliate-partner primary-color">TCM Janine</td>
+                                <td class="acnt-date">09.03.2023 11:21</td>
+                                <td class="billable">CHF 49</td>
+                                <td class="d-flex"><p class="status-chips mr-10"><span class="ml-10">Open</span></p> <i class="fa fa-caret-down" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="affiliate-partner primary-color">TCM Janine</td>
+                                <td class="acnt-date">09.03.2023 11:21</td>
+                                <td class="billable">CHF 49</td>
+                                <td class="d-flex"><p class="status-chips mr-10"><span class="ml-10">Open</span></p> <i class="fa fa-caret-down" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="affiliate-partner primary-color">TCM Janine</td>
+                                <td class="acnt-date">09.03.2023 11:21</td>
+                                <td class="billable">CHF 49</td>
+                                <td class="d-flex"><p class="status-chips mr-10"><span class="ml-10">Open</span></p> <i class="fa fa-caret-down" aria-hidden="true"></i></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination">
+                    <!-- Pagination controls go here -->
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a class="pagination-next" href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="open-invoices mt-30">
+            <div class="invoice-header">
+                <h2 class="invoice-title">Latest Activations</h2>
+                <p class="d-flex invoice-sort">Latest Entries <img src="assets/images/Sort_small.svg" alt="sort_small">
+                </p>
+            </div>
+            <div class="inoice-table">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Affiliate Partner</th>
+                                <th>Card Type</th>
+                                <th>Card Nr.</th>
+                                <th>Date</th>
+                                <th>Shop Order Nr.</th>
+                                <th>Shop Status</th>
+                                <th>Billing Positions</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Table rows go here -->
+                            <tr>
+                                <td class="affiliate-partner">TCM Janine</td>
+                                <td class="acnt-date"><p class="role-chip my-15"><span class="role-title">One</span></p></td>
+                                <td class="table-text">643OsldfjlaAsflas</td>
+                                <td class="table-text">18.01.2023</td>
+                                <td class="table-text">#1522</td>
+                                <td class="table-text">Done</td>
+                                <td class="billable">CHF 49</td>
+                                <td class="text-center"><img src="assets/images/Group 33.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td class="affiliate-partner">TCM Janine</td>
+                                <td class="acnt-date"><p class="role-chip my-15"><span class="role-title">One</span></p></td>
+                                <td class="table-text">643OsldfjlaAsflas</td>
+                                <td class="table-text">18.01.2023</td>
+                                <td class="table-text">#1522</td>
+                                <td class="table-text">Done</td>
+                                <td class="billable">CHF 49</td>
+                                <td class="text-center"><img src="assets/images/Group 33.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td class="affiliate-partner">TCM Janine</td>
+                                <td class="acnt-date"><p class="role-chip my-15"><span class="role-title">One</span></p></td>
+                                <td class="table-text">643OsldfjlaAsflas</td>
+                                <td class="table-text">18.01.2023</td>
+                                <td class="table-text">#1522</td>
+                                <td class="table-text">Done</td>
+                                <td class="billable">CHF 49</td>
+                                <td class="text-center"><img src="assets/images/Group 33.svg" alt=""></td>
+                            </tr>
+                            <tr>
+                                <td class="affiliate-partner">TCM Janine</td>
+                                <td class="acnt-date"><p class="role-chip my-15"><span class="role-title">One</span></p></td>
+                                <td class="table-text">643OsldfjlaAsflas</td>
+                                <td class="table-text">18.01.2023</td>
+                                <td class="table-text">#1522</td>
+                                <td class="table-text">Done</td>
+                                <td class="billable">CHF 49</td>
+                                <td class="text-center"><img src="assets/images/Group 33.svg" alt=""></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination">
+                    <!-- Pagination controls go here -->
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a class="pagination-next" href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/chart.js"></script>
+</body>
+
+</html>
